@@ -153,7 +153,7 @@ kitchen();
 console.log('doing dishes');
 console.log('cleaning the tables');
 console.log('taking others order'); */
-
+/*
 function time(ms){
     return new Promise((resolve, reject) =>{
         if (is_shop_open){
@@ -196,4 +196,34 @@ async function kitchen(){
         console.log('day ended, shop is closed')
     }
 }
-kitchen()
+kitchen()  */
+
+// fetch api 
+/*
+
+const url = 'http://worldtimeapi.org/api/timezone/America/New_york'
+
+async function getData(){
+ const response = await fetch(url)
+ const data = await response.json()
+ console.log(data)
+}
+getData() */
+/*
+const url = 'https://freetestapi.com/api/v1/countries'
+const request = new Request (url)
+async function getData(){
+    try{
+        const response = await fetch(request)
+        if (response.status === 200){
+            const data = await response.json()
+            console.log('success', data)
+        }else{
+            console.log('server Error', response)
+        }
+        }catch(error){
+            console.log('error', error)
+    }
+}
+getData()
+*/
